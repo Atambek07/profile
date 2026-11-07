@@ -7,6 +7,9 @@
 Личный сайт-визитка нового поколения: асимметричный Bento Grid на матовом стекле,
 живой интерактивный WebGL-фон и микровзаимодействия уровня Awwwards.
 
+**🌍 Live: [atambek07.github.io/profile](https://atambek07.github.io/profile/)**
+*Деплой автоматический: пуш в `main` → GitHub Actions собирает и публикует.*
+
 </div>
 
 ---
@@ -71,7 +74,7 @@ npm run preview
 ## 📦 Деплой для Instagram-bio
 
 1. `npm run build`;
-2. папку `dist/` целиком закиньте на любой статик-хостинг:
+2. либо просто пушните в `main` — GitHub Actions соберёт и опубликует сайт сам ( см. `.github/workflows/deploy.yml` );
    **Netlify Drop** (drag-and-drop), **Cloudflare Pages**, **GitHub Pages** или ваш **Oracle Cloud VPS** (nginx);
 3. получите короткий домен (например, `atambek.dev`) и ставьте его в шапку профиля.
 
