@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#050505" />
+  <meta name="description" content="Атамбек — Software Engineer | Backend & Hardware. Self-hosted AI Agents, IoT, custom circuits." />
+  <title>Атамбек — Software Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <noscript><style>[data-gsap]{opacity:1 !important;transform:none !important}</style></noscript>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <canvas id="webgl-bg" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <main class="stage">
+    <section class="bento" aria-label="Профиль Атамбек">
+
+      <!-- ============ PROFILE ============ -->
+      <article class="tile tile--profile col-full tilt" data-gsap>
+        <div class="avatar">
+          <span class="avatar__inner" aria-hidden="true">А</span>
+          <i class="ph-fill ph-seal-check avatar__badge" aria-hidden="true"></i>
+        </div>
+        <h1 class="name">Атамбек</h1>
+        <p class="status">
+          <span id="typewriter" aria-label="Software Engineer | Backend &amp; Hardware"></span>
+          <span class="status__caret" aria-hidden="true"></span>
+        </p>
+      </article>
+
+      <!-- ============ STACK ============ -->
+      <article class="tile tile--stack col-full tilt" data-gsap>
+        <header class="tile__head">
+          <i class="ph ph-circuitry tile__icon" aria-hidden="true"></i>
+          <h2 class="tile__title">Tech Stack</h2>
+        </header>
+        <div class="badges">
+          <span class="badge"><i class="ph ph-coffee ic-java"></i>Java</span>
+          <span class="badge"><i class="ph ph-plus-square ic-cpp"></i>C++</span>
+          <span class="badge"><i class="ph ph-flask ic-py"></i>Python · aiogram</span>
+          <span class="badge"><i class="ph ph-terminal-window ic-linux"></i>Linux</span>
+          <span class="badge"><i class="ph ph-hard-drives ic-ubuntu"></i>Ubuntu</span>
+          <span class="badge"><i class="ph ph-fediverse-logo ic-fedora"></i>Fedora</span>
+        </div>
+      </article>
+
+      <!-- ============ INFRASTRUCTURE ============ -->
+      <article class="tile tile--infra tilt" data-gsap>
+        <header class="tile__head">
+          <i class="ph ph-stack tile__icon" aria-hidden="true"></i>
+          <h2 class="tile__title">Infrastructure</h2>
+        </header>
+        <p class="tile__lead">Self-hosted<br /><span class="grad">AI&nbsp;Agents</span></p>
+        <div class="host-status" role="status">
+          <span class="dot" aria-hidden="true"></span>
+          Oracle Cloud VPS — Online
+        </div>
+      </article>
+
+      <!-- ============ HARDWARE ============ -->
+      <article class="tile tile--hw tilt" data-gsap>
+        <header class="tile__head">
+          <i class="ph ph-cpu tile__icon tile__icon--accent" aria-hidden="true"></i>
+          <h2 class="tile__title">Hardware</h2>
+        </header>
+        <i class="ph ph-circuitry tile__mega" aria-hidden="true"></i>
+        <ul class="hw-list">
+          <li>IoT</li>
+          <li>Raspberry&nbsp;Pi</li>
+          <li>Custom&nbsp;Circuits</li>
+        </ul>
+      </article>
+
+      <!-- ============ SOCIALS ============ -->
+      <a class="tile tile--social tilt magnetic" data-gsap
+         href="https://instagram.com/kurbanbekovich1" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="ph ph-instagram-logo social__icon ic-ig" aria-hidden="true"></i>
+        <span class="social__label">Instagram</span>
+        <i class="ph ph-arrow-up-right social__arrow" aria-hidden="true"></i>
+      </a>
+
+      <a class="tile tile--social tilt magnetic" data-gsap
+         href="https://t.me/kurbanbekovich0" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+        <i class="ph ph-telegram-logo social__icon ic-tg" aria-hidden="true"></i>
+        <span class="social__label">Telegram</span>
+        <i class="ph ph-arrow-up-right social__arrow" aria-hidden="true"></i>
+      </a>
+
+      <a class="tile tile--social tilt magnetic" data-gsap
+         href="https://wa.me/996500577509" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="ph ph-whatsapp-logo social__icon ic-wa" aria-hidden="true"></i>
+        <span class="social__label">WhatsApp</span>
+        <i class="ph ph-arrow-up-right social__arrow" aria-hidden="true"></i>
+      </a>
+
+      <a class="tile tile--social tilt magnetic" data-gsap
+         href="https://github.com/Atambek07" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="ph ph-github-logo social__icon ic-gh" aria-hidden="true"></i>
+        <span class="social__label">GitHub</span>
+        <i class="ph ph-arrow-up-right social__arrow" aria-hidden="true"></i>
+      </a>
+
+    </section>
+
+    <footer class="stage__foot" data-gsap-fade>
+      © <span id="year"></span> Atambek&nbsp;&nbsp;·&nbsp;&nbsp;WebGL&nbsp;Craft
+    </footer>
+  </main>
+</body>
+</html>
